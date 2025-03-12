@@ -1,7 +1,7 @@
 import discord
-import os  # ✅ Import os to get environment variables
+import os  # Import os to get environment variables
 
-# ✅ Fetch the token securely from Railway
+# Fetch the token securely from Railway
 TOKEN = os.getenv("DISCORD_BOT_TOKEN")
 
 intents = discord.Intents.default()
