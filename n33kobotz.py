@@ -1,6 +1,8 @@
 import discord
+import os  # ✅ Import os to get environment variables
 
-TOKEN = "MTM0ODc1NjQzODc4NDQwOTYyMA.GLIkCu.UCDSOBrpXLr8EaPvW-eeX0LWRIwdum9eS7uKxA"
+# ✅ Fetch the token securely from Railway
+TOKEN = os.getenv("DISCORD_BOT_TOKEN")
 
 intents = discord.Intents.default()
 intents.messages = True
